@@ -1,7 +1,11 @@
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
-let auth = getAuth();
+import { auth } from "../../firebaseConfig";
 
-export const AuthAPI = () => {
-//   signInWithEmailAndPassword(auth, email, password);
+export const AuthAPI = (email, password) => {
+  try {
+    let response = signInWithEmailAndPassword(auth, email, password);
+    return response;
+  } catch (error) {
+    return error;
+  }
 };
- 
