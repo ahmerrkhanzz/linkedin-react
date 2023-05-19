@@ -1,9 +1,12 @@
-import React from 'react'
+import Login from "../components/Login";
+
 
 function Auth() {
+  
   return (
-    <div>Auth</div>
-  )
+    
+    <Login></Login>
+  );
 }
 
-export default Auth
+export default Auth;
