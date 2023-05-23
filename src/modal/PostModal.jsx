@@ -1,9 +1,14 @@
 import { Button, Modal } from "antd";
 import { useState } from "react";
 
-const PostModal = ({ modalOpen, setModalOpen }) => {
+const PostModal = ({
+  modalOpen,
+  setModalOpen,
+  status,
+  setStatus,
+  sendStatusToFirebase,
+}) => {
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("");
   const handleOk = () => {
     setLoading(true);
     setTimeout(() => {
@@ -11,7 +16,6 @@ const PostModal = ({ modalOpen, setModalOpen }) => {
     }, 3000);
   };
 
-  const sendStatusToFirebase = () => { console.log(status);};
   return (
     <>
       <Modal
