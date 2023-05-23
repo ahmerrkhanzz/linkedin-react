@@ -29,7 +29,7 @@ function Topbar() {
             <img src="../../public/bell.svg" className=" w-6" alt="" />
           </a>
           <a href="#" className=" cursor-pointer">
-            <img src="../../public/user.svg" className=" w-6" alt="" />
+            <img src="../../public/user-avatar.jpg" className=" w-6 rounded-full" alt="" />
           </a>
         </div>
       </div>
