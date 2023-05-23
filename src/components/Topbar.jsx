@@ -3,7 +3,7 @@ import React from "react";
 function Topbar() {
   return (
     <div className="bg-white p-3.5 flex justify-center items-center">
-      <div className="xl:container flex justify-between">
+      <div className="md:container flex justify-between">
         <div className="flex items-center justify-center">
           <img src="../../public/logo_mini.svg" className=" w-7" alt="" />
           <input
@@ -27,6 +27,9 @@ function Topbar() {
           </a>
           <a href="#" className=" cursor-pointer">
             <img src="../../public/bell.svg" className=" w-6" alt="" />
+          </a>
+          <a href="#" className=" cursor-pointer">
+            <img src="../../public/user.svg" className=" w-6" alt="" />
           </a>
         </div>
       </div>
